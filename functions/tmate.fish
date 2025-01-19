@@ -20,7 +20,7 @@ function tmate-pair
     sleep 1
 
     if not test -e "$TMATE_SOCKET_LOCATION"
-        tmate -S "$TMATE_SOCKET_LOCATION" -f "$HOME/.tmate.conf" new-session -d -s "$TMATE_PAIR_NAME"
+        tmate -a ~/.ssh/authorized_keys -S "$TMATE_SOCKET_LOCATION" -f "$HOME/.tmate.conf" new-session -d -s "$TMATE_PAIR_NAME"
 
         set url ""
         while test -z "$url"
