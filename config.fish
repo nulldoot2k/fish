@@ -1,3 +1,4 @@
+# https://arthurpedroti.com.br/setup-fish-starship-nvm-ubuntu-linux-wsl2/
 if status is-interactive
   set -gx EDITOR nvim
   set -gx PATH $PATH ~/.fnm ~/.yarn/bin ~/.composer/vendor/bin
