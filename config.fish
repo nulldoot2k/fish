@@ -1,7 +1,6 @@
 # https://arthurpedroti.com.br/setup-fish-starship-nvm-ubuntu-linux-wsl2/
 if status is-interactive
   set -gx EDITOR nvim
-  set -gx PATH $PATH ~/.fnm ~/.yarn/bin ~/.composer/vendor/bin
   set -gx PATH $PATH /usr/local/go-1.23.2/bin
 
   if not set -q TMUX
@@ -12,4 +11,5 @@ if status is-interactive
   for file in ~/.config/fish/functions/*.fish
       source $file
   end
+  # set --universal nvm_default_version 18
 end
